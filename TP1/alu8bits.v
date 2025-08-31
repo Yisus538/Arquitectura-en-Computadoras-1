@@ -11,9 +11,9 @@ module alu8bit(
   reg overflow; //bit auxiliar para overflow
 
   always @(*) begin
-    result = 0;
-    carry = 0;
-    overflow = 0;
+    result = 8'h00;
+    carry  = 1'b0;
+    overflow = 1'b0;
 
     case (opcode)
       3'b000: begin //suma

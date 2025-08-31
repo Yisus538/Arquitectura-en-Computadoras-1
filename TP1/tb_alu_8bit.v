@@ -14,6 +14,7 @@ module tb_alu_8bit;
     $dumpfile("alu_8bit.vcd");
     $dumpvars(0, tb_alu_8bit);
   
+    a = 8'h01; b = 8'h01;
     opcode = 3'b000; #10; // suma
     opcode = 3'b001; #10; // resta
     opcode = 3'b010; #10; // AND
