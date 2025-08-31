@@ -23,7 +23,6 @@ module alu8bit(
       end
 
       3'b001: begin //resta 
-      {carry, result} = a - b; // Captura el carry
       overflow = (a[7] == b[7]) && (result[7])!= a[7]; // ALU detecta overflow
       end
 
